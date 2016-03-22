@@ -14,7 +14,13 @@ Domain Path: /lang/
 
 namespace ProfilePress\PP_Admin_Bar_Control;
 
+register_activation_hook( __FILE__, array( 'ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_activation' ) );
+register_uninstall_hook( __FILE__, array( 'ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_uninstall' ) );
+
 require_once dirname( __FILE__ ) . '/settings.php';
+Settings::get_instance();
+PP_Admin_Bar_Control::get_instance();
+
 
 class PP_Admin_Bar_Control {
 
@@ -111,6 +117,27 @@ class PP_Admin_Bar_Control {
 		}
 	}
 
+	public static function on_activation() {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
+			return;
+		}
+
+		$data = array(
+			'disable_admin_bar' => 'yes',
+			'disable_dashboard_access' => 'yes'
+		);
+
+		add_option('abc_options', $data);
+	}
+
+	public static function on_uninstall() {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
+			return;
+		}
+
+		delete_option( 'abc_options' );
+	}
+
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
 			self::$instance = new self;
@@ -120,7 +147,3 @@ class PP_Admin_Bar_Control {
 	}
 
 }
-
-
-Settings::get_instance();
-PP_Admin_Bar_Control::get_instance();

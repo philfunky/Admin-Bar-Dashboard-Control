@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Bar & Dashboard Control\n"
+"POT-Creation-Date: 2016-03-22 16:03+0100\n"
+"PO-Revision-Date: 2016-03-22 16:03+0100\n"
+"Last-Translator: Agbonghama Collins <me@w3guy.com>\n"
+"Language-Team: Agbonghama Collins <me@w3guy.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: include.settings-page.php:20
+msgid "Admin Bar & Control"
+msgstr ""
+
+#: include.settings-page.php:21
+msgid "Disable admin bar and control access to WordPress dashboard."
+msgstr ""
+
+#: include.settings-page.php:25
+msgid "Settings saved"
+msgstr ""
+
+#: include.settings-page.php:34 include.settings-page.php:77
+msgid "Click to toggle"
+msgstr ""
+
+#: include.settings-page.php:35
+msgid "Admin Bar"
+msgstr ""
+
+#: include.settings-page.php:41
+msgid "Disable Admin Bar"
+msgstr ""
+
+#: include.settings-page.php:47
+msgid "Check to disable admin bar."
+msgstr ""
+
+#: include.settings-page.php:52
+msgid "Admin Bar Control"
+msgstr ""
+
+#: include.settings-page.php:63
+msgid ""
+"Select user roles admin bar will be disabled for. It will be disabled for "
+"everyone except admins if none is checked."
+msgstr ""
+
+#: include.settings-page.php:70 include.settings-page.php:123
+msgid "Save All Changes"
+msgstr ""
+
+#: include.settings-page.php:78
+msgid "Dashboard Access"
+msgstr ""
+
+#: include.settings-page.php:83
+msgid "Disable Dashboard Access"
+msgstr ""
+
+#: include.settings-page.php:89
+msgid "Check to disable dashboard access for everyone."
+msgstr ""
+
+#: include.settings-page.php:94
+msgid "Dashboard Access Control"
+msgstr ""
+
+#: include.settings-page.php:105
+msgid ""
+"Select user roles dashboard access will be disabled for. It will be disabled "
+"for everyone except admins if none is checked."
+msgstr ""
+
+#: include.settings-page.php:110
+msgid "Dashboard Redirect URL"
+msgstr ""
+
+#: include.settings-page.php:116
+msgid ""
+"Enter URL to redirect users to without dashboard access. If empty, users "
+"will be redirected to website homepage."
+msgstr ""
+
+#: include.settings-page.php:138
+msgid "Developer"
+msgstr ""
+
+#: include.settings-page.php:142
+msgid "Made with lots of love by"
+msgstr ""
+
+#: include.settings-page.php:143
+msgid "Agbonghama Collins"
+msgstr ""
+
+#: include.settings-page.php:151
+msgid "Support Plugin"
+msgstr ""
+
+#: include.settings-page.php:163
+#, php-format
+msgid ""
+"Is this plugin useful for you? If so, please help support its ongoing "
+"development and improvement with a <a href=\"%s\" target=\"_blank"
+"\">donation</a>."
+msgstr ""
+
+#: include.settings-page.php:173
+msgid "Or, if you are short on funds, there are other ways you can help out:"
+msgstr ""
+
+#: include.settings-page.php:176
+#, php-format
+msgid ""
+"Leave a positive review on the plugin's <a href=\"%s\">WordPress listing</a>"
+msgstr ""
+
+#: include.settings-page.php:184
+#, php-format
+msgid ""
+"Vote \"Works\" on the plugin's <a href=\"%s\" target=\"_blank\">WordPress "
+"listing</a>"
+msgstr ""
+
+#: include.settings-page.php:193
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Share your thoughts on Twitter</a>"
+msgstr ""
+
+#: settings.php:22
+msgid "Admin Bar & Dashboard Control"
+msgstr ""
+
+#: settings.php:23
+msgid "Admin Bar & Dash"
+msgstr ""

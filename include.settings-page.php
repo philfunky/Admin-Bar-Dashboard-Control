@@ -42,7 +42,6 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 											</th>
 											<td>
 												<input id="disable_admin_bar" type="checkbox" name="abc_options[disable_admin_bar]" value="yes" <?php checked( $disable_admin_bar, 'yes' ) ?>>
-
 												<p class="description">
 													<?php _e( 'Check to disable admin bar.', 'admin-bar-dashboard-control' ); ?>
 												</p>
@@ -73,7 +72,6 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 							</div>
 
 							<div class="postbox">
-
 								<div title="<?php _e( 'Click to toggle', 'admin-bar-dashboard-control' ); ?>" class="handlediv"><br></div>
 								<h3 class="hndle"><span><?php _e( 'Dashboard Access', 'admin-bar-dashboard-control' ); ?></span></h3>
 
@@ -84,7 +82,6 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 											</th>
 											<td>
 												<input id="disable_dashboard_access" type="checkbox" name="abc_options[disable_dashboard_access]" value="yes" <?php checked( $disable_dashboard_access, 'yes' ) ?>>
-
 												<p class="description">
 													<?php _e( 'Check to disable dashboard access for everyone.', 'admin-bar-dashboard-control' ); ?>
 												</p>
@@ -111,7 +108,6 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 											</th>
 											<td>
 												<input id="dashboard_redirect_url" type="text" name="abc_options[dashboard_redirect_url]" value="<?php echo $dashboard_redirect_url; ?>">
-
 												<p class="description">
 													<?php _e( 'Enter URL to redirect users to without dashboard access. If empty, users will be redirected to website homepage.', 'admin-bar-dashboard-control' ); ?>
 												</p>
@@ -129,9 +125,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 				</div>
 
 				<div id="postbox-container-1" class="postbox-container">
-
 					<div class="meta-box-sortables">
-
 						<div class="postbox">
 							<div class="handlediv"><br></div>
 							<h3 class="hndle" style="text-align: center;">
@@ -143,8 +137,6 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 									<a href="http://w3guy.com" target="_blank"><strong><?php _e( 'Agbonghama Collins', 'admin-bar-dashboard-control' ); ?></strong></a></div>
 							</div>
 						</div>
-
-
 						<div class="postbox">
 							<div class="handlediv"><br></div>
 							<h3 class="hndle" style="text-align: center;">
@@ -231,12 +223,14 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 							<h3 class="hndle ui-sortable-handle"><span>OmniPay WordPress</span></h3>
 
 							<div class="inside">
-								<p>WordPress payment extension for Easy Digital Downloads and WooCommerce(coming soon) that bundles several payment gateways together with an intuitive drag-and-drop interface for the gateways set up and management.</p>
-								<div><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
+								<p>WordPress payment extension for Easy Digital Downloads and WooCommerce that bundles several payment gateways together with an intuitive drag-and-drop interface for the gateways set up and management.</p>
+								<div style="margin:10px"><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
 										<button class="button-primary" type="button">Get it Now</button>
-									</a></div><div><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
-										<button class="button-primary" type="button">EDD PAyment Gateways</button>
-									</a></div><div><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
+									</a></div>
+								<div style="margin:10px"><a href="https://omnipay.io/edd-payment-gateways/?ref=admin-bar-dashboard" target="_blank">
+										<button class="button-primary" type="button">EDD Payment Gateways</button>
+									</a></div>
+								<div style="margin:10px"><a href="https://omnipay.io/woocommerce-payment-gateways/?ref=admin-bar-dashboard" target="_blank">
 										<button class="button-primary" type="button">WooCommerce Payment Gateway</button>
 									</a></div>
 							</div>
