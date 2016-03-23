@@ -223,7 +223,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 							<h3 class="hndle ui-sortable-handle"><span>OmniPay WordPress</span></h3>
 
 							<div class="inside">
-								<p>WordPress payment extension for Easy Digital Downloads and WooCommerce that bundles several payment gateways together with an intuitive drag-and-drop interface for the gateways set up and management.</p>
+								<p>WordPress payment extension for <strong>Easy Digital Downloads</strong> and <strong>WooCommerce</strong> that bundles several payment gateways together with an intuitive drag-and-drop interface for the gateways set up and management.</p>
 								<div style="margin:10px"><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
 										<button class="button-primary" type="button">Get it Now</button>
 									</a></div>
