@@ -17,7 +17,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 	<div class="wrap">
 
 		<div id="icon-options-general" class="icon32"></div>
-		<h2><?php _e( 'Admin Bar & Control', 'admin-bar-dashboard-control' ); ?></h2>
+		<h2><?php _e( 'Admin Bar & Dashboard Control', 'admin-bar-dashboard-control' ); ?></h2>
 		<p><?php _e( 'Disable admin bar and control access to WordPress dashboard.', 'admin-bar-dashboard-control' ); ?></p>
 
 		<?php
