@@ -241,4 +241,3 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 			<br class="clear">
 		</div>
 	</div>
-<?php
