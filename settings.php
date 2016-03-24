@@ -43,13 +43,34 @@ class Settings {
 	public static function save_options() {
 		if ( isset( $_POST['settings_submit'] ) && check_admin_referer( 'abc_settings_nonce', '_wpnonce' ) ) {
 
-			$saved_options = $_POST['abc_options'];
+			$saved_options = self::sanitize_data( $_POST['abdc_options'] );
 
-			update_option( 'abc_options', $saved_options );
+			update_option( 'abdc_options', $saved_options );
 
-			wp_redirect( admin_url('admin.php?page=admin-bar-dashboard-control&settings-updated=true') );
+			wp_redirect( admin_url( 'admin.php?page=admin-bar-dashboard-control&settings-updated=true' ) );
 			exit;
 		}
+	}
+
+	/**
+	 * Helper function to recursively sanitize POSTed data.
+	 *
+	 * @param $data
+	 *
+	 * @return string|array
+	 */
+	public static function sanitize_data( $data ) {
+		if ( is_string( $data ) ) return sanitize_text_field( $data );
+		$sanitized_data = array();
+		foreach ( $data as $key => $value ) {
+			if ( is_array( $data[ $key ] ) ) {
+				$sanitized_data[ $key ] = self::sanitize_data( $data[ $key ] );
+			} else {
+				$sanitized_data[ $key ] = sanitize_text_field( $data[ $key ] );
+			}
+		}
+
+		return $sanitized_data;
 	}
 
 	public static function get_instance() {

@@ -1,12 +1,12 @@
 <?php
 
-$abc_options = get_option( 'abc_options', array() );
-$disable_admin_bar    = isset( $abc_options['disable_admin_bar'] ) && !empty($abc_options['disable_admin_bar']) ? $abc_options['disable_admin_bar'] : '';
-$disable_dashboard_access    = isset( $abc_options['disable_dashboard_access'] ) && !empty($abc_options['disable_dashboard_access']) ? $abc_options['disable_dashboard_access'] : '';
-$dashboard_redirect_url    = isset( $abc_options['dashboard_redirect_url'] ) && !empty($abc_options['dashboard_redirect_url']) ? $abc_options['dashboard_redirect_url'] : '';
+$abdc_options             = get_option( 'abdc_options', array() );
+$disable_admin_bar        = ! empty( $abdc_options['disable_admin_bar'] ) ? $abdc_options['disable_admin_bar'] : '';
+$disable_dashboard_access = ! empty( $abdc_options['disable_dashboard_access'] ) ? $abdc_options['disable_dashboard_access'] : '';
+$dashboard_redirect_url   = ! empty( $abdc_options['dashboard_redirect_url'] ) ? $abdc_options['dashboard_redirect_url'] : '';
 
-$disable_admin_bar_roles = isset( $abc_options['disable_admin_bar_roles'] ) && !empty($abc_options['disable_admin_bar_roles']) ? $abc_options['disable_admin_bar_roles'] : array();
-$disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_roles'] ) && !empty($abc_options['disable_dashboard_access_roles']) ? $abc_options['disable_dashboard_access_roles'] : array();
+$disable_admin_bar_roles        = ! empty( $abdc_options['disable_admin_bar_roles'] ) ? $abdc_options['disable_admin_bar_roles'] : array();
+$disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_access_roles'] ) ? $abdc_options['disable_dashboard_access_roles'] : array();
 
 ?>
 	<style>
@@ -41,7 +41,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 												<label for="disable-admin-bar"><?php _e( 'Disable Admin Bar', 'admin-bar-dashboard-control' ); ?></label>
 											</th>
 											<td>
-												<input id="disable_admin_bar" type="checkbox" name="abc_options[disable_admin_bar]" value="yes" <?php checked( $disable_admin_bar, 'yes' ) ?>>
+												<input id="disable_admin_bar" type="checkbox" name="abdc_options[disable_admin_bar]" value="yes" <?php checked( $disable_admin_bar, 'yes' ) ?>>
 												<p class="description">
 													<?php _e( 'Check to disable admin bar.', 'admin-bar-dashboard-control' ); ?>
 												</p>
@@ -55,7 +55,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 													if($role_key == 'administrator') continue;
 													?>
 													<label>
-														<input id="admin-bar-<?php echo $role_key; ?>" type="checkbox" name="abc_options[disable_admin_bar_roles][]" value="<?php echo $role_key; ?>" <?php checked(in_array($role_key, $disable_admin_bar_roles)); ?>>
+														<input id="admin-bar-<?php echo $role_key; ?>" type="checkbox" name="abdc_options[disable_admin_bar_roles][]" value="<?php echo $role_key; ?>" <?php checked(in_array($role_key, $disable_admin_bar_roles)); ?>>
 														<?php echo $data['name']; ?></label><br/>
 												<?php endforeach; ?>
 												<p class="description">
@@ -81,7 +81,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 											<th scope="row"><label for="disable_dashboard_access"><?php _e( 'Disable Dashboard Access', 'admin-bar-dashboard-control' ); ?></label>
 											</th>
 											<td>
-												<input id="disable_dashboard_access" type="checkbox" name="abc_options[disable_dashboard_access]" value="yes" <?php checked( $disable_dashboard_access, 'yes' ) ?>>
+												<input id="disable_dashboard_access" type="checkbox" name="abdc_options[disable_dashboard_access]" value="yes" <?php checked( $disable_dashboard_access, 'yes' ) ?>>
 												<p class="description">
 													<?php _e( 'Check to disable dashboard access for everyone.', 'admin-bar-dashboard-control' ); ?>
 												</p>
@@ -95,7 +95,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 													if($role_key == 'administrator') continue;
 													?>
 													<label>
-														<input id="dashboard-access-<?php echo $role_key; ?>" type="checkbox" name="abc_options[disable_dashboard_access_roles][]" value="<?php echo $role_key; ?>" <?php checked(in_array($role_key, $disable_dashboard_access_roles)); ?>>
+														<input id="dashboard-access-<?php echo $role_key; ?>" type="checkbox" name="abdc_options[disable_dashboard_access_roles][]" value="<?php echo $role_key; ?>" <?php checked(in_array($role_key, $disable_dashboard_access_roles)); ?>>
 														<?php echo $data['name']; ?></label><br/>
 												<?php endforeach; ?>
 												<p class="description">
@@ -107,7 +107,7 @@ $disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_
 											<th scope="row"><label for="dashboard_redirect_url"><?php _e( 'Dashboard Redirect URL', 'admin-bar-dashboard-control' ); ?></label>
 											</th>
 											<td>
-												<input id="dashboard_redirect_url" type="text" name="abc_options[dashboard_redirect_url]" value="<?php echo $dashboard_redirect_url; ?>">
+												<input id="dashboard_redirect_url" type="text" name="abdc_options[dashboard_redirect_url]" value="<?php echo $dashboard_redirect_url; ?>">
 												<p class="description">
 													<?php _e( 'Enter URL to redirect users to without dashboard access. If empty, users will be redirected to website homepage.', 'admin-bar-dashboard-control' ); ?>
 												</p>

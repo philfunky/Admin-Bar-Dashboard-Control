@@ -14,7 +14,8 @@ Domain Path: /lang/
 
 namespace ProfilePress\PP_Admin_Bar_Control;
 
-register_activation_hook( __FILE__, array( 'ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_activation' ) );
+register_activation_hook( __FILE__,
+	array( 'ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_activation' ) );
 register_uninstall_hook( __FILE__, array( 'ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_uninstall' ) );
 
 require_once dirname( __FILE__ ) . '/settings.php';
@@ -28,13 +29,13 @@ class PP_Admin_Bar_Control {
 
 	public function __construct() {
 
-		$abc_options                        = get_option( 'abc_options', array() );
-		$this->is_admin_bar_disabled        = isset( $abc_options['disable_admin_bar'] ) ? $abc_options['disable_admin_bar'] : '';
-		$this->is_dashboard_access_disabled = isset( $abc_options['disable_dashboard_access'] ) && ! empty( $abc_options['disable_dashboard_access'] ) ? $abc_options['disable_dashboard_access'] : '';
-		$this->dashboard_redirect_url       = isset( $abc_options['dashboard_redirect_url'] ) && ! empty( $abc_options['dashboard_redirect_url'] ) ? $abc_options['dashboard_redirect_url'] : home_url();
+		$abdc_options                       = get_option( 'abdc_options', array() );
+		$this->is_admin_bar_disabled        = isset( $abdc_options['disable_admin_bar'] ) ? $abdc_options['disable_admin_bar'] : '';
+		$this->is_dashboard_access_disabled = ! empty( $abdc_options['disable_dashboard_access'] ) ? $abdc_options['disable_dashboard_access'] : '';
+		$this->dashboard_redirect_url       = ! empty( $abdc_options['dashboard_redirect_url'] ) ? $abdc_options['dashboard_redirect_url'] : home_url();
 
-		$this->disable_admin_bar_roles        = isset( $abc_options['disable_admin_bar_roles'] ) && ! empty( $abc_options['disable_admin_bar_roles'] ) ? $abc_options['disable_admin_bar_roles'] : array();
-		$this->disable_dashboard_access_roles = isset( $abc_options['disable_dashboard_access_roles'] ) && ! empty( $abc_options['disable_dashboard_access_roles'] ) ? $abc_options['disable_dashboard_access_roles'] : array();
+		$this->disable_admin_bar_roles        = ! empty( $abdc_options['disable_admin_bar_roles'] ) ? $abdc_options['disable_admin_bar_roles'] : array();
+		$this->disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_access_roles'] ) ? $abdc_options['disable_dashboard_access_roles'] : array();
 
 		add_filter( 'show_admin_bar', array( $this, 'admin_bar' ) );
 		add_filter( 'admin_init', array( $this, 'dashboard_access' ) );
@@ -112,7 +113,7 @@ class PP_Admin_Bar_Control {
 	 */
 	public function disable_dashboard_access() {
 		if ( is_admin() ) {
-			wp_redirect( $this->dashboard_redirect_url );
+			wp_redirect( esc_url( $this->dashboard_redirect_url ) );
 			exit;
 		}
 	}
@@ -123,11 +124,11 @@ class PP_Admin_Bar_Control {
 		}
 
 		$data = array(
-			'disable_admin_bar' => 'yes',
-			'disable_dashboard_access' => 'yes'
+			'disable_admin_bar'        => 'yes',
+			'disable_dashboard_access' => 'yes',
 		);
 
-		add_option('abc_options', $data);
+		add_option( 'abdc_options', $data );
 	}
 
 	public static function on_uninstall() {
@@ -135,7 +136,7 @@ class PP_Admin_Bar_Control {
 			return;
 		}
 
-		delete_option( 'abc_options' );
+		delete_option( 'abdc_options' );
 	}
 
 	public static function get_instance() {
