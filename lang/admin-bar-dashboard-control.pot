@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Admin Bar & Dashboard Control\n"
-"POT-Creation-Date: 2016-03-22 16:03+0100\n"
-"PO-Revision-Date: 2016-03-22 16:03+0100\n"
+"POT-Creation-Date: 2016-03-25 09:23+0100\n"
+"PO-Revision-Date: 2016-03-25 09:24+0100\n"
 "Last-Translator: Agbonghama Collins <me@w3guy.com>\n"
 "Language-Team: Agbonghama Collins <me@w3guy.com>\n"
 "Language: en_US\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: include.settings-page.php:20
-msgid "Admin Bar & Control"
+#: include.settings-page.php:20 settings.php:22
+msgid "Admin Bar & Dashboard Control"
 msgstr ""
 
 #: include.settings-page.php:21
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Settings saved"
 msgstr ""
 
-#: include.settings-page.php:34 include.settings-page.php:77
+#: include.settings-page.php:34 include.settings-page.php:75
 msgid "Click to toggle"
 msgstr ""
 
@@ -42,73 +42,73 @@ msgstr ""
 msgid "Disable Admin Bar"
 msgstr ""
 
-#: include.settings-page.php:47
+#: include.settings-page.php:46
 msgid "Check to disable admin bar."
 msgstr ""
 
-#: include.settings-page.php:52
+#: include.settings-page.php:51
 msgid "Admin Bar Control"
 msgstr ""
 
-#: include.settings-page.php:63
+#: include.settings-page.php:62
 msgid ""
 "Select user roles admin bar will be disabled for. It will be disabled for "
 "everyone except admins if none is checked."
 msgstr ""
 
-#: include.settings-page.php:70 include.settings-page.php:123
+#: include.settings-page.php:69 include.settings-page.php:119
 msgid "Save All Changes"
 msgstr ""
 
-#: include.settings-page.php:78
+#: include.settings-page.php:76
 msgid "Dashboard Access"
 msgstr ""
 
-#: include.settings-page.php:83
+#: include.settings-page.php:81
 msgid "Disable Dashboard Access"
 msgstr ""
 
-#: include.settings-page.php:89
+#: include.settings-page.php:86
 msgid "Check to disable dashboard access for everyone."
 msgstr ""
 
-#: include.settings-page.php:94
+#: include.settings-page.php:91
 msgid "Dashboard Access Control"
 msgstr ""
 
-#: include.settings-page.php:105
+#: include.settings-page.php:102
 msgid ""
 "Select user roles dashboard access will be disabled for. It will be disabled "
 "for everyone except admins if none is checked."
 msgstr ""
 
-#: include.settings-page.php:110
+#: include.settings-page.php:107
 msgid "Dashboard Redirect URL"
 msgstr ""
 
-#: include.settings-page.php:116
+#: include.settings-page.php:112
 msgid ""
 "Enter URL to redirect users to without dashboard access. If empty, users "
 "will be redirected to website homepage."
 msgstr ""
 
-#: include.settings-page.php:138
+#: include.settings-page.php:132
 msgid "Developer"
 msgstr ""
 
-#: include.settings-page.php:142
+#: include.settings-page.php:136
 msgid "Made with lots of love by"
 msgstr ""
 
-#: include.settings-page.php:143
+#: include.settings-page.php:137
 msgid "Agbonghama Collins"
 msgstr ""
 
-#: include.settings-page.php:151
+#: include.settings-page.php:143
 msgid "Support Plugin"
 msgstr ""
 
-#: include.settings-page.php:163
+#: include.settings-page.php:155
 #, php-format
 msgid ""
 "Is this plugin useful for you? If so, please help support its ongoing "
@@ -116,30 +116,26 @@ msgid ""
 "\">donation</a>."
 msgstr ""
 
-#: include.settings-page.php:173
+#: include.settings-page.php:165
 msgid "Or, if you are short on funds, there are other ways you can help out:"
 msgstr ""
 
-#: include.settings-page.php:176
+#: include.settings-page.php:168
 #, php-format
 msgid ""
 "Leave a positive review on the plugin's <a href=\"%s\">WordPress listing</a>"
 msgstr ""
 
-#: include.settings-page.php:184
+#: include.settings-page.php:176
 #, php-format
 msgid ""
 "Vote \"Works\" on the plugin's <a href=\"%s\" target=\"_blank\">WordPress "
 "listing</a>"
 msgstr ""
 
-#: include.settings-page.php:193
+#: include.settings-page.php:185
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Share your thoughts on Twitter</a>"
-msgstr ""
-
-#: settings.php:22
-msgid "Admin Bar & Dashboard Control"
 msgstr ""
 
 #: settings.php:23
