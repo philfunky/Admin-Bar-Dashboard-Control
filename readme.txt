@@ -15,6 +15,11 @@ Simple plugin for disabling admin bar and preventing access to WordPress dashboa
 
 It's that simple :D
 
+
+### Contribution
+Plugin is open source on [GitHub](https://github.com/ProfilePress/Admin-Bar-Dashboard-Control). Issues and pull requests are welcome.
+
+
 ### Plugins you will like
 * **[ProfilePress](https://wordpress.org/plugins/ppress/)**: A shortcode based WordPress form builder that makes building custom login, registration and password reset forms stupidly simple. [More info here](http://profilepress.net)
 * **[OmniPay](https://omnipay.io)**: OmniPay is a payment gateway extension for WooCommerce and Easy Digital Downloads that bundles several payment providers such as Stripe, 2checkout, PayPal, Braintree, WePay, Authorize.Net together thus saving you money.
@@ -22,11 +27,6 @@ You get over seven(7) payment extensions for the price of one saving you over 90
 * **[Better WePay Payment Gateway for WooCommerce](https://omnipay.io/downloads/better-wepay-payment-gateway-for-woocommerce/)**: allows your WooCommerce powered store to accept credit card and bank account payment from shoppers via WePay.
 * **[Better 2Checkout Payment Gateway for WooCommerce](https://wordpress.org/plugins/better-2checkout-payment-gateway-for-woocommerce/)**: allows your WooCommerce powered store to accept credit card and PayPal payment from shoppers via 2Checkout.
 * **[https://wordpress.org/plugins/edd-2checkout/](https://wordpress.org/plugins/edd-2checkout/)**: accept credit card and PayPal payment in your Easy Digital Downloads powered store via 2Checkout.
-
-
-
-## Contribution
-Plugin is open source on [GitHub](https://github.com/ProfilePress/Admin-Bar-Dashboard-Control). Issues and pull requests are welcome.
 
 
 == Installation ==
