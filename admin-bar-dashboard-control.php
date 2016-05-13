@@ -84,6 +84,11 @@ class PP_Admin_Bar_Control {
 		$current_user       = wp_get_current_user();
 		$current_user_roles = $current_user->roles;
 
+        // bail if doing admin-ajax.php as it's often accessed from frontend
+        if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+            return;
+        }
+
 		// bail if disable dashboard access checkbox isn't checked.
 		if ( $this->is_dashboard_access_disabled != 'yes' ) {
 			return;
