@@ -3,8 +3,8 @@ Contributors: Collizo4sky
 Donate link: http://profilepress.net/pricing/
 Tags: admin, admin bar, dashboard, access, role, roles, admin dashboard, admin bar, toolbar, disable, hide, disable admin bar, disable toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove admin bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, Toolbar
 Requires at least: 3.9
-Tested up to: 4.5.3
-Stable tag: 1.0.1
+Tested up to: 4.6
+Stable tag: 1.0.2
 License: GPL-2.0+
 
 Disable admin bar and control users access to WordPress dashboard.
