@@ -33,6 +33,7 @@ class Settings {
 	}
 
 	public static function settings_page() {
+		ob_start();
 		// call to save the setting options
 		self::save_options();
 
