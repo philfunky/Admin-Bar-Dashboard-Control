@@ -48,6 +48,9 @@ Have any question, shoot us a mail via support[at]profilepress.net
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed: Warning: Cannot modify header information - headers already sent
+
 = 1.0.1 =
 * Fixed frontend admin-ajax.php functionality for users with disabled Dashboard access
 
