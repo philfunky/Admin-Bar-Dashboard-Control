@@ -41,7 +41,6 @@ class PP_Admin_Bar_Control {
 		add_filter( 'admin_init', array( $this, 'dashboard_access' ) );
 	}
 
-
 	/**
 	 * Callback to disable admin bar.
 	 *
@@ -52,14 +51,17 @@ class PP_Admin_Bar_Control {
 		$current_user       = wp_get_current_user();
 		$current_user_roles = $current_user->roles;
 
+		// get current user's admin_bar_front preference
+		$user_option        = get_user_option( 'admin_bar_front', $current_user->ID );
+
 		// bail if the disable admin bar checkbox isn't checked.
 		if ( $this->is_admin_bar_disabled != 'yes' ) {
-			return true;
+			return $user_option;
 		}
 
 		// if user is admin, bail.
 		if ( is_super_admin( $current_user->ID ) ) {
-			return true;
+			return $user_option;
 		} else {
 
 			// if no role is selected, disable for everyone by return false.
