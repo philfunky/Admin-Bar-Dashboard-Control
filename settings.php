@@ -1,7 +1,7 @@
 <?php
-
 namespace ProfilePress\PP_Admin_Bar_Control;
 
+ob_start();
 class Settings {
 
 	private static $instance;
@@ -33,7 +33,6 @@ class Settings {
 	}
 
 	public static function settings_page() {
-		ob_start();
 		// call to save the setting options
 		self::save_options();
 

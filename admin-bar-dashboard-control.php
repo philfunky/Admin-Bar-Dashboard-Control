@@ -52,7 +52,8 @@ class PP_Admin_Bar_Control {
 		$current_user_roles = $current_user->roles;
 
 		// get current user's admin_bar_front preference
-		$user_option        = get_user_option( 'admin_bar_front', $current_user->ID );
+		// if value is true, $user_option will has a boolen true value or false otherwise.
+		$user_option        = get_user_option( 'show_admin_bar_front', $current_user->ID ) == 'true';
 
 		// bail if the disable admin bar checkbox isn't checked.
 		if ( $this->is_admin_bar_disabled != 'yes' ) {
