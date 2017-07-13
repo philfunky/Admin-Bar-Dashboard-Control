@@ -2,11 +2,11 @@
 
 /*
 Plugin Name: Admin Bar & Dashboard Control
-Plugin URI: http://profilepress.net/downloads/admin-bar-dashboard-control/
+Plugin URI: https://profilepress.net/downloads/admin-bar-dashboard-control/
 Description: Disable admin bar and control access to WordPress dashboard.
-Version: 1.0.3
-Author: Author: Agbonghama Collins (W3Guy LLC)
-Author URI: http://w3guy.com
+Version: 1.0.4
+Author: Author: Collins Agbonghama (W3Guy LLC)
+Author URI: https://w3guy.com
 License: GPL2
 Text Domain: admin-bar-dashboard-control
 Domain Path: /lang/

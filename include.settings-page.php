@@ -134,7 +134,7 @@ $disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_acce
 
 							<div class="inside">
 								<div style="text-align: center; margin: auto"><?php _e( 'Made with lots of love by', 'admin-bar-dashboard-control' ); ?> <br>
-									<a href="http://w3guy.com" target="_blank"><strong><?php _e( 'Agbonghama Collins', 'admin-bar-dashboard-control' ); ?></strong></a></div>
+									<a href="https://w3guy.com" target="_blank"><strong><?php _e( 'Agbonghama Collins', 'admin-bar-dashboard-control' ); ?></strong></a></div>
 							</div>
 						</div>
 						<div class="postbox">
@@ -150,7 +150,7 @@ $disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_acce
 									$flattr_url        = 'https://flattr.com/submit/auto?user_id=tech4sky&url=https%3A%2F%2Fwordpress.org%2Fplugins%2Fadmin-bar-dashboard-control%2F';
 									$review_url        = 'https://wordpress.org/support/view/plugin-reviews/admin-bar-dashboard-control';
 									$compatibility_url = 'https://wordpress.org/plugins/admin-bar-dashboard-control/#compatibility';
-									$twitter_url       = 'http://twitter.com/home?status=I%20love%20this%20WordPress%20plugin!%20http://wordpress.org/plugins/admin-bar-dashboard-control/';
+									$twitter_url       = 'https://twitter.com/home?status=I%20love%20this%20WordPress%20plugin!%20https://wordpress.org/plugins/admin-bar-dashboard-control/';
 									?>
 									<p><?php printf( wp_kses( __( 'Is this plugin useful for you? If so, please help support its ongoing development and improvement with a <a href="%s" target="_blank">donation</a>.',
 											'admin-bar-dashboard-control' ),
