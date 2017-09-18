@@ -147,25 +147,13 @@ $disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_acce
 								<div style="text-align: center; margin: auto">
 									<?php
 									// escape the URLs properly
-									$flattr_url        = 'https://flattr.com/submit/auto?user_id=tech4sky&url=https%3A%2F%2Fwordpress.org%2Fplugins%2Fadmin-bar-dashboard-control%2F';
 									$review_url        = 'https://wordpress.org/support/view/plugin-reviews/admin-bar-dashboard-control';
 									$compatibility_url = 'https://wordpress.org/plugins/admin-bar-dashboard-control/#compatibility';
 									$twitter_url       = 'https://twitter.com/home?status=I%20love%20this%20WordPress%20plugin!%20https://wordpress.org/plugins/admin-bar-dashboard-control/';
 									?>
-									<p><?php printf( wp_kses( __( 'Is this plugin useful for you? If so, please help support its ongoing development and improvement with a <a href="%s" target="_blank">donation</a>.',
-											'admin-bar-dashboard-control' ),
-											array(
-												'a' => array(
-													'href'   => array(),
-													'target' => array( '_blank' ),
-												),
-											) ),
-											esc_url( $flattr_url ) ); ?></p>
 
-									<p><?php _e( 'Or, if you are short on funds, there are other ways you can help out:',
-											'admin-bar-dashboard-control' ); ?></p>
 									<ul>
-										<li><?php printf( wp_kses( __( 'Leave a positive review on the plugin\'s <a href="%s">WordPress listing</a>', 'admin-bar-dashboard-control' ),
+										<li><?php printf( wp_kses( __( 'Leave a positive review on the plugin\'s <a target="_blank" href="%s">WordPress listing</a>', 'admin-bar-dashboard-control' ),
 												array(
 													'a' => array(
 														'href'   => array(),
@@ -173,15 +161,6 @@ $disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_acce
 													),
 												) ),
 												esc_url( $review_url ) ); ?></li>
-										<li><?php printf( wp_kses( __( 'Vote "Works" on the plugin\'s <a href="%s" target="_blank">WordPress listing</a>',
-												'admin-bar-dashboard-control' ),
-												array(
-													'a' => array(
-														'href'   => array(),
-														'target' => array( '_blank' ),
-													),
-												) ),
-												esc_url( $compatibility_url ) ); ?></li>
 										<li><?php printf( wp_kses( __( '<a href="%s" target="_blank">Share your thoughts on Twitter</a>',
 												'admin-bar-dashboard-control' ),
 												array(
@@ -213,28 +192,23 @@ $disable_dashboard_access_roles = ! empty( $abdc_options['disable_dashboard_acce
 									<li>And lots more.</li>
 									<li></li>
 								</ul>
-								<div><a href="https://wordpress.org/plugins/ppress/" target="_blank">
-										<button class="button-primary" type="button">Download for Free</button>
+								<div><a href="https://profilepress.net/?utm_source=admin-bar-dash-plugin&utm_medium=crossell&utm_campaign=sidebar_ad" target="_blank">
+										<button class="button-primary" type="button">Get Started Now!</button>
 									</a></div>
 							</div>
 						</div>
-						<div class="postbox" style="text-align: center">
-							<div class="handlediv"><br></div>
-							<h3 class="hndle ui-sortable-handle"><span>OmniPay WordPress</span></h3>
 
-							<div class="inside">
-								<p>WordPress payment extension for <strong>Easy Digital Downloads</strong> and <strong>WooCommerce</strong> that bundles several payment gateways together with an intuitive drag-and-drop interface for the gateways set up and management.</p>
-								<div style="margin:10px"><a href="https://omnipay.io/?ref=admin-bar-dashboard" target="_blank">
-										<button class="button-primary" type="button">Get it Now</button>
-									</a></div>
-								<div style="margin:10px"><a href="https://omnipay.io/edd-payment-gateways/?ref=admin-bar-dashboard" target="_blank">
-										<button class="button-primary" type="button">EDD Payment Gateways</button>
-									</a></div>
-								<div style="margin:10px"><a href="https://omnipay.io/woocommerce-payment-gateways/?ref=admin-bar-dashboard" target="_blank">
-										<button class="button-primary" type="button">WooCommerce Payment Gateway</button>
-									</a></div>
-							</div>
-						</div>
+                        <div class="postbox" style="text-align: center">
+                            <div class="handlediv"><br></div>
+                            <h3 class="hndle ui-sortable-handle"><span>MailOptin WordPress Plugin</span></h3>
+
+                            <div class="inside">
+                                <p>Convert your website visitors into email subscribers, nurture & engage them with beautifully designed automated newsletters. All in WordPress.</p>
+                                <div style="margin:10px 0">
+                                    <a href="https://mailoptin.io/pricing/?discount=10PERCENTOFF&utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=profilepress-sidebar-banner" target="_blank"><img width="250" src="https://i0.wp.com/mailoptin.io/wp-content/uploads/2016/01/mailoptin10off.jpg">
+                                    </a></div>
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
