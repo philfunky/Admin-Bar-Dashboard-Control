@@ -4,7 +4,7 @@
 Plugin Name: Admin Bar & Dashboard Control
 Plugin URI: https://profilepress.net/downloads/admin-bar-dashboard-control/
 Description: Disable admin bar and control access to WordPress dashboard.
-Version: 1.1
+Version: 1.2
 Author: Author: Collins Agbonghama (W3Guy LLC)
 Author URI: https://w3guy.com
 License: GPL2
@@ -17,6 +17,7 @@ namespace ProfilePress\PP_Admin_Bar_Control;
 register_activation_hook(__FILE__, array('ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_activation'));
 register_uninstall_hook(__FILE__, array('ProfilePress\PP_Admin_Bar_Control\PP_Admin_Bar_Control', 'on_uninstall'));
 
+require_once dirname(__FILE__) . '/mo-admin-notice.php';
 require_once dirname(__FILE__) . '/settings.php';
 Settings::get_instance();
 PP_Admin_Bar_Control::get_instance();
