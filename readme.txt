@@ -4,8 +4,8 @@ Donate link: https://profilepress.net/pricing/
 Tags: admin, admin bar, dashboard, access, role, roles, admin dashboard, admin bar, toolbar, disable, hide, disable admin bar, disable toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove admin bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, Toolbar
 Requires at least: 4.0
 Requires PHP: 5.3
-Tested up to: 4.9.8
-Stable tag: 1.2.1
+Tested up to: 5.0
+Stable tag: 1.2.4
 License: GPL-2.0+
 
 Disable admin bar and control users access to WordPress dashboard.
@@ -24,6 +24,7 @@ Plugin is open source on [GitHub](https://github.com/ProfilePress/Admin-Bar-Dash
 ### Plugins you will like:
 * **[ProfilePress](https://wordpress.org/plugins/ppress/)**: A shortcode based WordPress form builder that makes building custom login, registration and password reset forms stupidly simple. [More info here](http://profilepress.net)
 * **[MailOptin](https://mailoptin.io/)** - The best WordPress email optin forms, email automation & newsletters plugin in the market.
+* **[EDD Paddle for WordPress](https://omnipay.io/downloads/edd-paddle-payment-gateway/)** - Accept payments through the Paddle.com payment gateway on Easy Digital Downloads.
 
 == Installation ==
 
@@ -43,6 +44,15 @@ Have any question, shoot us a mail via support[at]profilepress.net
 1. Settings page
 
 == Changelog ==
+
+= 1.2.4 =
+* Improve compatibility with WordPress 5.0
+
+= 1.2.3 =
+* Make admin notice dismiss button more obvious.
+
+= 1.2.2 =
+* Small fix and improvement.
 
 = 1.2.1 =
 * Fix inability to dismiss notice in some sites
