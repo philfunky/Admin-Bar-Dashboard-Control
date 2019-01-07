@@ -4,8 +4,8 @@ Donate link: https://profilepress.net/pricing/
 Tags: admin, admin bar, dashboard, access, role, roles, admin dashboard, admin bar, toolbar, disable, hide, disable admin bar, disable toolbar, disable-wordpress-admin-bar, disable-wordpress-toolbar, remove admin bar, remove-toolbar, remove-wordpress-admin-bar, remove-wordpress-toolbar, Toolbar
 Requires at least: 4.0
 Requires PHP: 5.3
-Tested up to: 5.0
-Stable tag: 1.2.4
+Tested up to: 5.0.2
+Stable tag: 1.2.5
 License: GPL-2.0+
 
 Disable admin bar and control users access to WordPress dashboard.
@@ -44,6 +44,9 @@ Have any question, shoot us a mail via support[at]profilepress.net
 1. Settings page
 
 == Changelog ==
+
+= 1.2.5 =
+* Tuned down admin notices.
 
 = 1.2.4 =
 * Improve compatibility with WordPress 5.0
