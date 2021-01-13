@@ -66,14 +66,18 @@ class PP_Admin_Bar_Control
         } else {
 
             // if no role is selected, disable for everyone by return false.
-            if (empty($this->disable_admin_bar_roles)) {
-                return false;
+            if (empty($this->disable_dashboard_access_roles)) {
+                $this->disable_dashboard_access();
             } else {
                 foreach ($current_user_roles as $role) {
-                    return in_array($role, $this->disable_admin_bar_roles) ? false : true;
+                    if (!in_array($role, $this->disable_dashboard_access_roles)) {
+                        return;
+                    }
                 }
+                $this->disable_dashboard_access();
             }
         }
+
     }
 
 
