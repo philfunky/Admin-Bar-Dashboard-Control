@@ -70,8 +70,11 @@ class PP_Admin_Bar_Control
                 return false;
             } else {
                 foreach ($current_user_roles as $role) {
-                    return in_array($role, $this->disable_admin_bar_roles) ? false : true;
+                    if(!in_array($role, $this->disable_admin_bar_roles)) {                        
+                        return true;
+                    }
                 }
+                return false;
             }
         }
     }
