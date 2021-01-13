@@ -107,15 +107,15 @@ class PP_Admin_Bar_Control
                 $this->disable_dashboard_access();
             } else {
                 foreach ($current_user_roles as $role) {
-                    if (in_array($role, $this->disable_dashboard_access_roles)) {
-                        $this->disable_dashboard_access();
+                    if (!in_array($role, $this->disable_dashboard_access_roles)) {
+                        return;
                     }
                 }
+                $this->disable_dashboard_access();
             }
         }
 
     }
-
     /**
      * Call to disable dashboard access.
      */
